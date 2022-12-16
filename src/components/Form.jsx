@@ -6,37 +6,37 @@ const people = [
     name: 'Draw a gorilla in a forest on the boulder',
     user: 'luca',
     imageUrl:
-      'https://www.xenia-viaggi.it/admin/wp-content/uploads/Gorilla2.jpg',
+      '',
   },
   {
     name: 'Courtney Henry',
     user: 'Designer',
     imageUrl:
-      'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+      '',
   },
   {
     name: 'Tom Cook',
     user: 'Director, Product Development',
     imageUrl:
-      'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+      '',
   },
   {
     name: 'Whitney Francis',
     user: 'Copywriter',
     imageUrl:
-      'https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+      '',
   },
   {
     name: 'Leonard Krasner',
     user: 'Senior Designer',
     imageUrl:
-      'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+      '',
   },
   {
     name: 'Floyd Miles',
     user: 'Principal Designer',
     imageUrl:
-      'https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+      '',
   },
 ]
 
@@ -71,8 +71,10 @@ export default function Form() {
                 name="role"
                 className="h-full rounded-md border-transparent bg-transparent py-0 pl-4 pr-7 text-gray-500 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
               >
-                <option>Text</option>
-                <option>Upload</option>
+                <option>Size</option>
+                <option>Small</option>
+                <option>Medium</option>
+                <option>Large</option>
               </select>
             </div>
           </div>
