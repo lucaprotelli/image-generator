@@ -190,7 +190,7 @@ export default function Hero() {
                 </div>
               </div>
               <div>
-                <h1 className="text-center text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
+                <h1 className="text-center text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-7xl">
                   <span className="block">The best AI</span>
                   <span className="block text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
                     image generator
