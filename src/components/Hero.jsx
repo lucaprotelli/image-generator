@@ -5,7 +5,6 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import Form from './Form'
 import Modal from './Modal'
 import Footer from './Footer'
-import Login from './Login'
 
 const navigation = [
   { name: 'History', href: '#' },
@@ -229,7 +228,6 @@ export default function Hero() {
           </div>
         </div>
         <Form />
-        <Login />
       </main>
       <Footer />
     </div>
