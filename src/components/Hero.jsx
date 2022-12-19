@@ -3,6 +3,10 @@ import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import Form from './Form'
+import Modal from './Modal'
+import Footer from './Footer'
+import Login from './Login'
+
 const navigation = [
   { name: 'History', href: '#' },
   { name: 'Collections', href: '#' },
@@ -12,7 +16,6 @@ const navigation = [
 
 export default function Hero() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-
   return (
     <div className="isolate bg-white h-screen">
       <div className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]">
@@ -107,14 +110,7 @@ export default function Hero() {
                 </a>
               ))}
             </div>
-            <div className="hidden lg:flex lg:min-w-0 lg:flex-1 lg:justify-end">
-              <a
-                href="#"
-                className="inline-block rounded-lg px-3 py-1.5 text-sm font-semibold leading-6 text-gray-900 shadow-sm ring-1 ring-gray-900/10 hover:ring-gray-900/20"
-              >
-                Log in
-              </a>
-            </div>
+            <Modal />
           </nav>
           <Dialog as="div" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
             <Dialog.Panel
@@ -233,7 +229,9 @@ export default function Hero() {
           </div>
         </div>
         <Form />
+        <Login />
       </main>
+      <Footer />
     </div>
   )
 }
