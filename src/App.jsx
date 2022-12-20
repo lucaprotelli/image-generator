@@ -5,5 +5,6 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import Hero from './components/Hero'
 
 export default function App() {
-  return <Hero />
+  return  <Hero />
+
 }
