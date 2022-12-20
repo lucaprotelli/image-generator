@@ -7,10 +7,10 @@ import Modal from './Modal'
 import Footer from './Footer'
 
 const navigation = [
-  { name: 'History', href: '#' },
-  { name: 'Collections', href: '#' },
-  { name: 'Documentation', href: '#' },
-  { name: 'Contacts', href: '#' },
+  { name: 'History', href: 'history' },
+  { name: 'Collections', href: 'collections' },
+  { name: 'Documentation', href: 'documentation' },
+  { name: 'Contacts', href: 'contact' },
 ]
 
 export default function Hero() {
