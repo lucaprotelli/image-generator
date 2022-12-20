@@ -1,9 +1,9 @@
 const navigation = {
     main: [
-      { name: 'History', href: '#' },
-      { name: 'Collection', href: '#' },
-      { name: 'Documentation', href: '#' },
-      { name: 'Contacts', href: '#' },
+      { name: 'History', href: '/history' },
+      { name: 'Collection', href: '/collection' },
+      { name: 'Documentation', href: '/documentation' },
+      { name: 'Contacts', href: '/contacts' },
     ],
     social: [
       {
@@ -30,7 +30,7 @@ const navigation = {
       },
       {
         name: 'GitHub',
-        href: '#',
+        href: 'https://github.com/lucaprotelli/image-generator',
         icon: (props) => (
           <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
             <path
