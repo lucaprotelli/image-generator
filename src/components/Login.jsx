@@ -1,8 +1,52 @@
 import { Dialog, Transition } from '@headlessui/react'
-import { Fragment, useState } from 'react'
+import { Fragment, useState, useEffect } from 'react'
+import { supabase } from '../controllers/supabaseClient'
+
 
 export default function LoginModal() {
   let [isOpen, setIsOpen] = useState(true)
+  const [user, setUser] = useState(null)
+  useEffect(() => {
+    window.addEventListener('hashchange', () => {
+      checkUser();
+    });
+  }, [])
+  async function checkUser() {
+    const user = supabase.auth.user();
+    setUser(user);
+  }
+  async function signInWithGithub() {
+    await supabase.auth.signInWithOAuth({ provider: 'github' });
+    // const { data, error } = await supabase.auth.signInWithOAuth({
+    //   provider: 'github'
+    // })
+    // const oAuthToken = data.session.provider_token // use to access provider API
+    // console.log(oAuthToken)
+  }
+  async function signOut() {
+    await supabase.auth.signOut();
+    setUser(null);
+  }
+  if(user) {
+    return (
+      <div className="flex flex-col items-center justify-center min-h-screen py-2 -mt-56 px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col items-center justify-center w-full max-w-md p-6 space-y-4 bg-white border border-gray-300 rounded-lg shadow-lg">
+          <div className="flex items-center justify-center w-12 h-12 rounded-full bg-gray-100">
+            <svg className="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+            </svg>
+          </div>
+          <div className="text-center">
+            <h1 className="text-xl font-medium text-gray-900">Welcome back!</h1>
+            <p className="text-sm text-gray-500">You are signed in as {user.email}</p>
+          </div>
+          <button onClick={signOut} className="inline-block rounded-lg px-3 py-1.5 text-sm font-semibold leading-6 text-gray-900 shadow-sm ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+            Sign out
+          </button>
+        </div>
+      </div>
+    )
+  }
 
   function closeModal() {
     setIsOpen(false)
@@ -14,7 +58,7 @@ export default function LoginModal() {
 
   return (
     <>
-      <div className="hidden lg:flex lg:min-w-0 lg:flex-1 lg:justify-end">
+      <div className="flex min-w-0 flex-1 grow justify-end">
         <button
             type="button"
             onClick={openModal}
@@ -157,8 +201,9 @@ export default function LoginModal() {
                 </div> */}
 
                 <div>
-                  <a
-                    href="#"
+                  <button
+                    type="button"
+                    onClick={signInWithGithub}
                     className="inline-flex w-full justify-center rounded-md border border-gray-300 bg-white py-2 px-4 text-sm font-medium text-gray-500 shadow-sm hover:bg-gray-50"
                   >
                     <span className="sr-only">Sign in with GitHub</span>
@@ -169,7 +214,7 @@ export default function LoginModal() {
                         clipRule="evenodd"
                       />
                     </svg>
-                  </a>
+                  </button>
                 </div>
               </div>
             </div>
@@ -185,3 +230,4 @@ export default function LoginModal() {
     </>
   )
 }
+
