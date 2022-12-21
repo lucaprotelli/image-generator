@@ -10,7 +10,7 @@ const navigation = [
   { name: 'History', href: 'history' },
   { name: 'Collections', href: 'collections' },
   { name: 'Documentation', href: 'documentation' },
-  { name: 'Contacts', href: 'contact' },
+  { name: 'Contacts', href: 'contacts' },
 ]
 
 export default function Hero() {
