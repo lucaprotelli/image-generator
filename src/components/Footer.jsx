@@ -1,7 +1,7 @@
 const navigation = {
     main: [
       { name: 'History', href: '/history' },
-      { name: 'Collection', href: '/collection' },
+      { name: 'Collections', href: '/collections ' },
       { name: 'Documentation', href: '/documentation' },
       { name: 'Contacts', href: '/contacts' },
     ],
