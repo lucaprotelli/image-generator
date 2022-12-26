@@ -35,6 +35,16 @@ const people = [
 ]
 
 export default function Form() {
+
+  const setFileUpload = () => {
+    const file = this.files[0]
+    const reader = new FileReader()
+    reader.readAsDataURL(file)
+    reader.onloadend = () => {
+      setFile(reader.result)
+    }
+  }
+
   return (
     <div className="mx-auto max-w-md sm:max-w-3xl">
       <div>
@@ -104,6 +114,19 @@ export default function Form() {
             </button>
           </div>
         </form>
+        <div className="m-3 text-center">
+                  <span className="text-gray-600">
+                    Or,{' '}
+                    <button
+                      type="button"
+                      accept="image/*"
+                      className="font-semibold text-indigo-600 focus:outline-none"
+                      onClick={() => { setFileUpload } }
+                    >upload an image</button>
+                    <input type="file" accept="image/*" className='hidden'/>
+                    {' '} to edit
+                  </span>
+                </div>
       </div>
       <div className="mt-10">
         <h3 className="text-sm font-medium text-gray-500">

@@ -60,7 +60,7 @@ export default function Hero() {
                     image generator
                   </span>
                 </h1>
-                <p className="mt-6 text-lg leading-8 text-gray-600 sm:text-center">
+                <p className="mt-6 leading-8 text-sm text-gray-600 text-center sm:text-base md:text-xl">
                   The most powerful AI image generator in the world that transform your words into art.
                 </p>
               </div>
