@@ -1,3 +1,3 @@
 export default function History() {
-  return <h1>history</h1>
+  return <a href="/">history</a>
 }

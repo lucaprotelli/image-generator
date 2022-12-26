@@ -5,6 +5,7 @@ import Contact from './routes/contact.jsx'
 import History from './routes/history.jsx'
 import Collections from './routes/collections.jsx'
 import Documentation from './routes/documentation.jsx'
+import Login from './routes/login.jsx'
 
 import ErrorPage from './error-page.jsx'
 import './index.css'
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
     path: 'documentation',
     element: <Documentation />,
   },
+  {
+    path: 'login',
+    element: <Login />,
+  }
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
