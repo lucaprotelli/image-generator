@@ -1,8 +1,17 @@
-import { Fragment, useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import { supabase } from '../controllers/supabaseClient'
+import Navbar from '../components/Navbar'
 
 export default function Login() {
 
+  async function signInWithTwitter() {  
+    await supabase.auth.signInWithOAuth({ provider: 'github' })
+    const { data, error } = await supabase.auth.signInWithOAuth({
+        provider: 'twitter'
+    })
+    const oAuthToken = data.session.provider_token // use to access provider API
+    console.log(oAuthToken)
+  }
   async function signInWithGithub() {
     await supabase.auth.signInWithOAuth({ provider: 'github' })
     const { data, error } = await supabase.auth.signInWithOAuth({
@@ -11,12 +20,14 @@ export default function Login() {
     const oAuthToken = data.session.provider_token // use to access provider API
     console.log(oAuthToken)
   }
+
   async function signOut() {
     const { error } = await supabase.auth.signOut()
   }
 
   return (
     <>
+        <Navbar />
       <div className="flex min-h-screen flex-col justify-center py-12 sm:px-6 lg:px-8">
         <div className="sm:mx-auto sm:w-full sm:max-w-md">
           <img src="../../image/open-ai-logo.png" className='mx-auto h-12 w-auto' alt="OpenAI Logo" />
@@ -104,26 +115,10 @@ export default function Login() {
                 </div>
               </div>
 
-              <div className="mt-6 grid grid-cols-3 gap-3">
+              <div className="mt-6 grid grid-cols-2 gap-3">
                 <div>
                   <a
-                    href="#"
-                    className="inline-flex w-full justify-center rounded-md border border-gray-300 bg-white py-2 px-4 text-sm font-medium text-gray-500 shadow-sm hover:bg-gray-50"
-                  >
-                    <span className="sr-only">Sign in with Facebook</span>
-                    <svg className="h-5 w-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
-                      <path
-                        fillRule="evenodd"
-                        d="M20 10c0-5.523-4.477-10-10-10S0 4.477 0 10c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V10h2.54V7.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V10h2.773l-.443 2.89h-2.33v6.988C16.343 19.128 20 14.991 20 10z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                  </a>
-                </div>
-
-                <div>
-                  <a
-                    href="#"
+                    onClick={signInWithTwitter}
                     className="inline-flex w-full justify-center rounded-md border border-gray-300 bg-white py-2 px-4 text-sm font-medium text-gray-500 shadow-sm hover:bg-gray-50"
                   >
                     <span className="sr-only">Sign in with Twitter</span>
