@@ -66,7 +66,7 @@ export default function Form() {
             Start with a detailed description
           </h2>
           <p className="mt-1 text-sm text-gray-500">
-            Basketball, Food, Animal.....
+            Sport, Food, Animal.....
           </p>
         </div>
         <form className="form mt-6 sm:flex sm:items-center">
