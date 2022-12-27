@@ -16,6 +16,19 @@ export default function Login() {
         setUser(session?.user ?? null)
     }, [])
 
+    async function signIn(email, password) {
+        try {
+            const { error } = await supabase.auth.signInWithPassword({
+                email,
+                password,
+            })
+            if (error) throw error
+            alert('Signed in successfully!')
+        } catch (error) {
+            alert(error.error_description || error.message)
+        }
+    }
+
     async function signUp(email, password) {
         try {
             const { error } = await supabase.auth.signUp({
@@ -23,9 +36,7 @@ export default function Login() {
                 password,
             })
             if (error) throw error
-            const { data: { user } } = await supabase.auth.getUser()
-            console.log(user)
-            alert('Signed up successfully!')
+            signIn(email, password);
         } catch (error) {
             alert(error.error_description || error.message)
         }

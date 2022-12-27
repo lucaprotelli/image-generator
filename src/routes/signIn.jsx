@@ -38,7 +38,7 @@ export default function Login() {
         const { data, error } = await supabase.auth.signInWithOAuth({
             provider: 'github',
             options: {
-                redirectTo: 'http://localhost:5175/login'
+                redirectTo: import.meta.env.VITE_SITE_URL
               }
         })
     }
