@@ -45,15 +45,16 @@ export default function Login() {
     }
 
     async function signInWithTwitter() {  
-        await supabase.auth.signInWithOAuth({ provider: 'github' })
         const { data, error } = await supabase.auth.signInWithOAuth({
             provider: 'twitter'
         })
     }
     async function signInWithGithub() {
-        await supabase.auth.signInWithOAuth({ provider: 'github' })
         const { data, error } = await supabase.auth.signInWithOAuth({
-            provider: 'github'
+            provider: 'github',
+            options: {
+                redirectTo: 'http://localhost:5175/login'
+              }
         })
     }
 
