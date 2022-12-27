@@ -67,14 +67,19 @@ export default function Navbar () {
                 </a>
               ))}
             </div>
-            <div className="flex min-w-0 flex-1 grow justify-end">
-        <a
-          href="login"
-          className="inline-block rounded-lg px-3 py-1.5 text-sm font-semibold leading-6 text-gray-900 shadow-sm ring-1 ring-gray-900/10 hover:ring-gray-900/20"
-        >
-          Log in
-        </a>
-      </div>
+            <div className="flex min-w-0 flex-1 grow justify-end gap-3">
+              <a
+                href="login"
+                className="inline-block rounded-lg px-3 py-1.5 text-center text-sm font-semibold leading-6 text-gray-900 shadow-sm ring-1 ring-gray-900/10 hover:ring-gray-900/20"
+              >
+                Log in
+              </a>
+              <a
+                href="register"  
+                className="inline-block rounded-lg border border-transparent bg-indigo-600 px-4 py-1.5 text-center text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+                Sign Up
+              </a>
+            </div>
             <div className="flex min-w-0 justify-end lg:hidden ml-5">
               <button
                 type="button"
