@@ -71,7 +71,7 @@ export default function Navbar() {
                                         fill="var(--b100)"
                                     ></path>
                                 </svg>
-                                <span className="block rounded-md font-mono text-base font-bold text-gray-900 hover:bg-gray-50 ">
+                                <span className="block rounded-md font-mono text-base font-bold text-gray-900">
                                     OpenAI
                                 </span>
                             </div>
@@ -82,7 +82,7 @@ export default function Navbar() {
                             <a
                                 key={item.name}
                                 href={item.href}
-                                className="font-semibold text-gray-900 hover:text-gray-900"
+                                className="font-semibold text-gray-900 border border-transparent px-3 py-2 transition-colors hover:no-underline rounded-lg hover:bg-indigo-200 hover:text-indigo-600"
                             >
                                 {item.name}
                             </a>
