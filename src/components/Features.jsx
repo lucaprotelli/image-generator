@@ -1,48 +1,47 @@
 import {
+    ArrowDownCircleIcon,
     ArrowPathIcon,
+    BookmarkIcon,
+    ChatBubbleBottomCenterTextIcon,
     CloudArrowUpIcon,
     CogIcon,
-    LockClosedIcon,
     ServerIcon,
     ShieldCheckIcon,
 } from "@heroicons/react/24/outline"
 
 const features = [
     {
-        name: "Push to Deploy",
-        description:
-            "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",
+        name: "Generate to save images",
+        description: "The images will be saved in your account for later use.",
         icon: CloudArrowUpIcon,
     },
     {
-        name: "SSL Certificates",
-        description:
-            "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",
-        icon: LockClosedIcon,
+        name: "Save your favorite images",
+        description: "You can save in a collection your favorite images.",
+        icon: BookmarkIcon,
     },
     {
-        name: "Simple Queues",
+        name: "Regenerate Images",
         description:
-            "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",
+            "If you write a different description will be regenerate a different set of image.",
         icon: ArrowPathIcon,
     },
     {
-        name: "Advanced Security",
-        description:
-            "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",
+        name: "Secure Authentication",
+        description: "We provide the best secure authentication for our users.",
         icon: ShieldCheckIcon,
     },
     {
-        name: "Powerful API",
+        name: "API in beta",
         description:
-            "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",
+            "During this time the API and models will evolve based on your feedback. To ensure all users can prototype comfortably, the default rate limit is 50 images per minute.",
         icon: CogIcon,
     },
     {
-        name: "Database Backups",
+        name: "Best support for our community",
         description:
-            "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",
-        icon: ServerIcon,
+            "If you have any kind of problem you can contact us or read the FAQ section.",
+        icon: ChatBubbleBottomCenterTextIcon,
     },
 ]
 
@@ -58,9 +57,7 @@ export default function Features() {
                         Everything you need to generate your image
                     </p>
                     <p className="mx-auto mt-5 max-w-prose text-xl text-gray-500">
-                        Phasellus lorem quam molestie id quisque diam aenean
-                        nulla in. Accumsan in quis quis nunc, ullamcorper
-                        malesuada. Eleifend condimentum id viverra nulla.
+                        Creating images from scratch based on a text prompt
                     </p>
                     <div className="mt-20">
                         <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-3">

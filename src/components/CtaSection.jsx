@@ -12,6 +12,7 @@ export default function CtaSection() {
                     <div className="inline-flex rounded-md shadow">
                         <a
                             href="https://beta.openai.com/docs/guides/images"
+                            target={"_blank"}
                             className="inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-5 py-3 text-base font-medium text-white hover:bg-indigo-700"
                         >
                             Read the docs
@@ -20,6 +21,7 @@ export default function CtaSection() {
                     <div className="ml-3 inline-flex">
                         <a
                             href="https://beta.openai.com/overview"
+                            target={"_blank"}
                             className="inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-100 px-5 py-3 text-base font-medium text-indigo-700 hover:bg-indigo-200"
                         >
                             Learn more

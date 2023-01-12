@@ -6,7 +6,7 @@ export default function Contact() {
     return (
         <>
             <Navbar />
-            <div className="bg-white h-screen flex justify-center items-center">
+            <div className="bg-white py-3 sm:py-8 md:py-20 lg:py-36">
                 <div className="mx-auto max-w-7xl py-16 px-6 lg:px-8">
                     <div className="mx-auto max-w-lg md:grid md:max-w-none md:grid-cols-2 md:gap-8">
                         <div>
@@ -29,10 +29,7 @@ export default function Contact() {
                                         />
                                     </div>
                                     <div className="ml-3 text-base text-gray-500">
-                                        <p>+1 (555) 123 4567</p>
-                                        <p className="mt-1">
-                                            Mon-Fri 8am to 6pm PST
-                                        </p>
+                                        <p>+39 (392) 123 4567 </p>
                                     </div>
                                 </div>
                                 <div className="mt-6 flex">
@@ -56,8 +53,7 @@ export default function Contact() {
                                 <p className="text-lg text-gray-500">
                                     Lorem, ipsum dolor sit amet consectetur
                                     adipisicing elit. Magni, repellat error
-                                    corporis doloribus similique, voluptatibus
-                                    numquam quam, quae officiis facilis.
+                                    corporis doloribus similique.
                                 </p>
                             </div>
                             <div className="mt-9">
@@ -69,10 +65,7 @@ export default function Contact() {
                                         />
                                     </div>
                                     <div className="ml-3 text-base text-gray-500">
-                                        <p>+1 (555) 123 4567</p>
-                                        <p className="mt-1">
-                                            Mon-Fri 8am to 6pm PST
-                                        </p>
+                                        <p>+39 (392) 123 4567</p>
                                     </div>
                                 </div>
                                 <div className="mt-6 flex">

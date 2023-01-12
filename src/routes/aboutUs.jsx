@@ -40,9 +40,9 @@ export default function AboutUs() {
                                 Our Team
                             </h2>
                             <p className="text-xl text-gray-500">
-                                Odio nisi, lectus dis nulla. Ultrices maecenas
-                                vitae rutrum dolor ultricies donec risus
-                                sodales. Tempus quis et.
+                                We have a team of 3 people, all of them are
+                                students at the IIS Benedetto Castelli in
+                                Brescia.
                             </p>
                         </div>
                         <ul

@@ -6,8 +6,20 @@ import { ChevronDownIcon } from "@heroicons/react/24/outline"
 
 const faqs = [
     {
-        question: "What's the best thing about Switzerland?",
-        answer: "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+        question: "Protelli supererà l'esame della patente?",
+        answer: "No.",
+    },
+    {
+        question: "Baldi è un robot?",
+        answer: "Si lo è!",
+    },
+    {
+        question: "Pade è un uomo?",
+        answer: "No. E' una tartaruga.",
+    },
+    {
+        question: "Cosa fa Protelli quando non è in classe?",
+        answer: "Protelli è un robot, non ha bisogno di dormire.",
     },
     // More questions...
 ]
