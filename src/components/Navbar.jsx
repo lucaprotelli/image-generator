@@ -199,7 +199,7 @@ export default function Navbar() {
                         </div>
                         <div className="mt-12 flow-root">
                             <div className="-my-6 divide-y divide-gray-500/10">
-                                <div className="space-y-2 py-6">
+                                <div className="space-y-2 py-56">
                                     {navigation.map((item) => (
                                         <a
                                             key={item.name}
