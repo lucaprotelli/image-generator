@@ -4,7 +4,7 @@ export default function Stats() {
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="mx-auto max-w-4xl text-center">
                     <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                        Trusted by developers and artist all over the world
+                        Trusted by developers and artists all over the world
                     </h2>
                     <p className="mt-3 text-xl text-gray-500 sm:mt-4">
                         Our API is used by thousands of developers and artist,

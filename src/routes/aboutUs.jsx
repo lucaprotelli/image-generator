@@ -40,7 +40,7 @@ export default function AboutUs() {
                                 Our Team
                             </h2>
                             <p className="text-xl text-gray-500">
-                                We have a team of 3 people, all of them are
+                                We are a team of 3 people, all of us are
                                 students at the IIS Benedetto Castelli in
                                 Brescia.
                             </p>

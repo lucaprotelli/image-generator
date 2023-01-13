@@ -69,7 +69,7 @@ export default function Hero() {
                                 </h1>
                                 <p className="mt-6 leading-8 text-sm text-gray-600 text-center sm:text-base md:text-xl">
                                     The most powerful AI image generator in the
-                                    world that transform your words into art.
+                                    world that transforms your words into art.
                                 </p>
                             </div>
                             <div className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]">
