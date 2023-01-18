@@ -1,42 +1,25 @@
 import { Configuration, OpenAIApi } from "openai"
+import { writeFileSync } from "fs"
 
 const configuration = new Configuration({
     apiKey: process.env.OPENAI_API_KEY,
 })
 const openai = new OpenAIApi(configuration)
 
-export default generateImage = async (req, res) => {
-    const { prompt, size } = req.body
+const prompt = "This is a test of the emergency broadcast system."
 
-    const image_size =
-        size === "small"
-            ? "256x256"
-            : size === "medium"
-            ? "512x512"
-            : "1024x1024"
-    try {
-        const response = await openai.createImage({
-            prompt,
-            n: 1,
-            size: image_size,
-        })
-        const image_url = response.data.data[0].url
-        res.status(200).json({
-            success: true,
-            data: image_url,
-        })
-    } catch (error) {
-        if (error.response) {
-            console.log(error.response.status)
-            console.log(error.response.data)
-        } else {
-            console.log(error.message)
-        }
-        res.status(400).json({
-            success: false,
-            error: "The image could not be generated",
-        })
-    }
-}
+const result = await openai.createImage({
+    prompt,
+    n: 1,
+    size: "1024x1024",
+    user: "luca",
+})
 
-module.exports = { generateImage }
+const url = result.data.data[0].url
+console.log(url)
+
+// Save the URL to Disk
+const imgResult = await fetch(url)
+const blob = await imgResult.blob()
+const buffer = Buffer.from(await blob.arrayBuffer())
+writeFileSync(`./img/${Date.now()}.png`, buffer)
