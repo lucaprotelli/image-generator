@@ -6,7 +6,7 @@ const people = [
         name: "Luca Protelli",
         role: "Full-Stack Developer",
         imageUrl:
-            "https://images.unsplash.com/photo-1588167056547-c183313da47c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1431&q=80",
+            "https://images.unsplash.com/photo-1627032670339-1610f785035d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1431&q=80",
         githubUrl: "https://github.com/lucaprotelli",
         twitterUrl: "https://twitter.com/protelli_luca",
     },
@@ -14,7 +14,7 @@ const people = [
         name: "Filippo Baldi",
         role: "Front-end Developer",
         imageUrl:
-            "https://images.unsplash.com/photo-1606321924891-1c35bf74e288?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1421&q=80",
+            "https://images.unsplash.com/photo-1646494835208-ba788b9a3ed5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80",
         githubUrl: "https://github.com/BaldiFilippo",
         twitterUrl: "https://twitter.com/baldifilippo_",
     },
@@ -22,7 +22,7 @@ const people = [
         name: "Filippo Paderno",
         role: "Marketing Manager",
         imageUrl:
-            "https://images.unsplash.com/photo-1525414097223-503d44b5244e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80",
+            "https://images.unsplash.com/photo-1665628194165-e1339c5327b9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1432&q=80",
         githubUrl: "https://github.com/FilippoPaderno",
         twitterUrl: "https://twitter.com/FilippoPaderno",
     },

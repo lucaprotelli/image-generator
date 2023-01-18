@@ -1,5 +1,4 @@
 import { PlusIcon } from "@heroicons/react/20/solid"
-import { Configuration, OpenAIApi } from "openai"
 import { generateImage } from "openai"
 
 const people = [
@@ -110,8 +109,8 @@ export default function Form() {
                     <div className="relative rounded-md shadow-sm sm:min-w-0 sm:flex-1">
                         <input
                             type="text"
-                            name="text"
-                            id="text"
+                            name="prompt"
+                            id="prompt"
                             className="block w-full rounded-md border-gray-300 pr-32 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                             placeholder="An Impressionist oil painting of sunflowers in a purple vase..."
                         />
@@ -124,8 +123,8 @@ export default function Form() {
                                 Role
                             </label>
                             <select
-                                id="role"
-                                name="role"
+                                id="size"
+                                name="size"
                                 className="h-full rounded-md border-transparent bg-transparent py-0 pl-4 pr-7 text-gray-500 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                             >
                                 <option>Size</option>

@@ -12,7 +12,36 @@ const products = [
         imageAlt:
             "Front of zip tote bag with white canvas, black canvas straps and handle, and black zipper pulls.",
     },
-    // More products...
+    {
+        id: 1,
+        name: "Content: ",
+        content: "church in a dark background",
+        href: "#",
+        imageSrc:
+            "https://images.unsplash.com/photo-1673899241611-83a38805a016?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+        imageAlt:
+            "Front of zip tote bag with white canvas, black canvas straps and handle, and black zipper pulls.",
+    },
+    {
+        id: 1,
+        name: "Content: ",
+        content: "mountain and a river",
+        href: "#",
+        imageSrc:
+            "https://images.unsplash.com/photo-1673903070027-ef7521c5c541?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+        imageAlt:
+            "Front of zip tote bag with white canvas, black canvas straps and handle, and black zipper pulls.",
+    },
+    {
+        id: 1,
+        name: "Content: ",
+        content: "typical japanese road ",
+        href: "#",
+        imageSrc:
+            "https://images.unsplash.com/photo-1673950271048-a12ae839d36d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NDh8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60",
+        imageAlt:
+            "Front of zip tote bag with white canvas, black canvas straps and handle, and black zipper pulls.",
+    },
 ]
 
 export default function History() {
